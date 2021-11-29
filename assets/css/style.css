@@ -1,0 +1,235 @@
+.products-carousel__btn, .products-carousel__btn--left, .products-carousel__btn--right, .section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-carousel__btn, .products-carousel__btn--left, .products-carousel__btn--right {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  direction: ltr;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #2c2c2c;
+  background-color: #e5e5e5;
+}
+
+*:link,
+*:visited,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  max-width: 1400px;
+}
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
+.card {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 25px;
+  display: flex !important;
+  flex-direction: column;
+}
+.product-card__img-wrap {
+  width: 185px;
+  height: 185px;
+  align-self: center;
+}
+.product-card__title {
+  font-size: 1.8rem;
+  color: #200a55;
+  font-weight: 400;
+  margin-top: 55px;
+}
+.product-card__upto {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+.product-card__price {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.product-card__percent {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 15px;
+}
+.product-card__percent-icon {
+  width: 17px;
+  height: 17px;
+}
+.product-card__info-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.section-title {
+  text-align: center;
+  gap: 20px;
+  max-width: 1000px;
+  padding: 0 75px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .section-title {
+    padding: 0;
+  }
+}
+.section-title__text {
+  color: #200a55;
+  font-size: 3rem;
+}
+.section-title__line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: rgba(32, 10, 85, 0.3);
+}
+@media only screen and (max-width: 768px) {
+  .section-title__line {
+    display: none;
+  }
+}
+
+.products-carousel {
+  position: relative;
+}
+.products-carousel__products {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.products-carousel__products .slick-slide {
+  margin: 0 10px;
+}
+.products-carousel__products .slick-arrow {
+  width: 55px;
+  height: 55px;
+  color: red;
+}
+.products-carousel__btn, .products-carousel__btn--right, .products-carousel__btn--left {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+}
+@media only screen and (max-width: 1400px) {
+  .products-carousel__btn, .products-carousel__btn--right, .products-carousel__btn--left {
+    background: #f2f2f2;
+  }
+}
+.products-carousel__btn--left {
+  left: 50px;
+}
+@media only screen and (max-width: 1400px) {
+  .products-carousel__btn--left {
+    left: 5px;
+  }
+}
+.products-carousel__btn--right {
+  right: 50px;
+}
+@media only screen and (max-width: 1400px) {
+  .products-carousel__btn--right {
+    right: 5px;
+  }
+}
+.products-carousel__btn-icon {
+  width: 9px;
+  height: 18px;
+}
