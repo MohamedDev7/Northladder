@@ -1,0 +1,12 @@
+{
+	"name": "Northladder",
+	"version": "1.0.0",
+	"description": "Northladder landing page",
+	"main": "index.js",
+	"scripts": {},
+	"author": "Mohamed Hasan",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.43.5"
+	}
+}

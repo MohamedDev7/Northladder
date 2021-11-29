@@ -1,0 +1,50 @@
+@use "../abstracts/index" as *;
+.products-carousel {
+	position: relative;
+	&__products {
+		max-width: 1160px;
+		margin: 0 auto;
+		& .slick-slide {
+			margin: 0 10px;
+		}
+		& .slick-arrow {
+			width: 55px;
+			height: 55px;
+			color: red;
+		}
+	}
+	&__btn {
+		@extend %flex-full;
+		@extend %btn;
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+		background-color: #fff;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 10000;
+		@include respond(bp-1400) {
+			background: #f2f2f2;
+		}
+
+		&--left {
+			@extend .products-carousel__btn;
+			left: 50px;
+			@include respond(bp-1400) {
+				left: 5px;
+			}
+		}
+		&--right {
+			@extend .products-carousel__btn;
+			right: 50px;
+			@include respond(bp-1400) {
+				right: 5px;
+			}
+		}
+	}
+	&__btn-icon {
+		width: 9px;
+		height: 18px;
+	}
+}

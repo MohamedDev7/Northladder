@@ -1,0 +1,39 @@
+.product-card {
+	background-color: #fff;
+	padding: 25px;
+	display: flex !important;
+	flex-direction: column;
+	&__img-wrap {
+		width: 185px;
+		height: 185px;
+		align-self: center;
+	}
+	&__title {
+		font-size: 1.8rem;
+		color: #200a55;
+		font-weight: 400;
+		margin-top: 55px;
+	}
+	&__upto {
+		font-size: 1.2rem;
+		margin-top: 15px;
+	}
+	&__price {
+		font-size: 2rem;
+		font-weight: 600;
+	}
+	&__percent {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		margin-top: 15px;
+	}
+	&__percent-icon {
+		width: 17px;
+		height: 17px;
+	}
+	&__info-icon {
+		width: 15px;
+		height: 15px;
+	}
+}

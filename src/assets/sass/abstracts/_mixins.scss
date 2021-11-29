@@ -1,0 +1,28 @@
+@mixin respond($bp) {
+	@if $bp == bp-1400 {
+		@media only screen and (max-width: 1400px) {
+			@content;
+		}
+	}
+	@if $bp == bp-1200 {
+		@media only screen and (max-width: 1200px) {
+			@content;
+		}
+	}
+
+	@if $bp == bp-992 {
+		@media only screen and (max-width: 992px) {
+			@content;
+		}
+	}
+	@if $bp == bp-768 {
+		@media only screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@if $bp == bp-576 {
+		@media only screen and (max-width: 576px) {
+			@content;
+		}
+	}
+}
